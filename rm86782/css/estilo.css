@@ -19,3 +19,19 @@ td {
 .img-tb {
     width: 20%;
 }
+/* Zebrando a tabela */
+tr:nth-child(even) { /* Linhas pares */
+    background-color: #808080;
+}
+
+tr:nth-child(odd) { /* Linhas ímpares */
+    background-color: #bebebe;
+}
+
+th {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #dda0dd;
+}
