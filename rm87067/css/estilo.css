@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    border-spacing: 5px;
+}
+
+table,
+th,
+td {
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+td {
+    text-align: center;
+}
+
+.img-tb {
+    width: 20%;
+}
+
+tr:nth-child(even) {
+    background-color: #d2691e;
+}
+
+tr:nth-child(odd) {
+    background-color: #9fdb9f;
+}
+
+th {
+    background-color: #ffd900;
+}
+
+tr:hover {
+    background-color: #808080;
+}
