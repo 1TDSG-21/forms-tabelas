@@ -18,3 +18,23 @@ td {
 td {
     text-align: center;
 }
+
+.img-tb {
+    width: 20%;
+}
+
+tr:nth-child(even) {
+    background-color: #d2691e;
+}
+
+tr:nth-child(odd) {
+    background-color: #9fdb9f;
+}
+
+th {
+    background-color: #ffd900;
+}
+
+tr:hover {
+    background-color: #808080;
+}
