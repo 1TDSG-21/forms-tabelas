@@ -8,9 +8,29 @@ table,th,td {
 }
 
 th,td {
-padding: 15px;
+    padding: 15px;
 }
 
 td{
     text-align: center;
+}
+
+.img-tb {
+    width: 20%;
+}
+
+tr:nth-child(even){
+    background-color: #d2691e;
+}
+
+tr:nth-child(odd){
+    background-color: #8fbc8f;
+}
+
+tr:hover {
+    background-color: #808080;
+}
+
+th{
+    background-color: #ffd700;
 }
