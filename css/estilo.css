@@ -34,3 +34,12 @@ tr:hover {
 th{
     background-color: #ffd700;
 }
+
+#container {
+    background-color: #ffe4b5;
+}
+
+input[type=text] {
+    display: block;
+    width: 100%;
+}

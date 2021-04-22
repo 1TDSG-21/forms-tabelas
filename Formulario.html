@@ -10,21 +10,42 @@
 
 <body>
     <div id="container">
-        <h1>FORMULÁRIO DE CADASTRO</h1>
+        <h1>EXEMPLO DE FORMULÁRIOS</h1>
         <div>
             <form action="Tabelas.html" method="GET">
-                <div>
-                    Nome : <input type="text" name="txtNm">
-                </div>
-                <div>
-                    Profissão : <input type="text" name="txtProf">
-                </div>
-                <div>
-                    E-mail : <input type="email" name="txtEmail">
-                </div>
-                <div>
-                    Nome : <input type="submit" value="ENVIAR">
-                </div>
+                <fieldset>
+                        <legend>FORMULÁRIO DE CADASTRO</legend>
+                        <div>
+                            <label for="IdtxtNm">Nome</label>
+                            <input type="text" name="txtNm" id="IdtxtNm">
+                        </div>
+                        <div>
+                            <label for="IdtxtProf">Profissão</label>
+                            <input type="text" name="txtProf" id="IdtxtProf">
+                        </div>
+                        <div>
+                            <label for="IdtxtEmail">E-mail</label>
+                            <input type="email" name="txtEmail" id="IdtxtEmail">
+                        </div>
+                    <fieldset>
+                        <legend>Gênero</legend>
+                        <div>
+                            <label for="RGB_1">Masculino</label>
+                            <input type="radio" name="RGB1" id="RGB_1" value="1">
+                        </div>
+                        <div>
+                            <label for="IdtxtEmail">Feminina</label>
+                            <input type="radio" name="RGB2" id="RGB_2" value="2">
+                        </div>
+                        <div>
+                            <label for="IdtxtEmail">Outros</label>
+                            <input type="radio" name="RGB3" id="RGB_3" value="3">
+                        </div>
+                        <div>
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </fieldset>
+                </fieldset>
             </form>
         </div>
     </div>
