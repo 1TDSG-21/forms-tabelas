@@ -11,18 +11,45 @@
 <body>
     <div id="container">
 
-        <h1>FORMULÁRIO DE CADASTRO</h1>
+        <h1>EXEMPLO DE FORMULÁRIO</h1>
         <div>
             <form action="tabela.html" method="GET">
+                <fieldset>
+                    <legend>FORMULÁRIO DE CADASTRO</legend>
                 <div>
-                    Nome : <input type="text" name="txtNm">
+                    <label for="idTxtNm">Nome</label> 
+                    <input type="text" name="txtNm" id="idTxtNm">
+               </div>
+                <div>
+                    <label for="idTxtProf">Profissão</label>
+                    <input type="text" name="txtProf" id="idTxtProf">
                 </div>
                 <div>
-                    Profissão : <input type="text" name="txtProf">
+                    <label for="idTxtEmail">Email</label> 
+                    <input type="email" name="textEmail" id="idTtxtEmail" pattern="[a-z]">
                 </div>
+                <div>
+
+                <fieldset>
+                    <legend>GÊNERO</legend>   
+                    <div> 
+                        <label for="idRdbGenM">Masculino</label>
+                        <input type="radio" name="rdbGen" id="idRdbGenM" valeu="m">
+                    </div>
+                </div>
+                <div>
+                    <label for="idRdbGenF">Feminino</label>
+                    <input type="radio" name="rdbGen" id="idRdbGenF" valeu="f">
+                </div>
+                <div>
+                    <label for="idRdbGenO">Outros</label>
+                    <input type="radio" name="rdbGen" id="idRdbGenO" valeu="o">
+                </div>
+                </fieldset>   
                 <div>
                     Nome : <input type="submit" value="ENVIAR">
                 </div>
+                </fieldset>
             </form>
         </div>
     </div>
