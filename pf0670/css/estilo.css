@@ -38,3 +38,12 @@ th {
 tr:hover {
     background-color: #808080;
 }
+
+#container {
+    background-color: #ffe4c4;
+}
+
+input[type=text] {
+    display: block;
+    width: 100%;
+}
