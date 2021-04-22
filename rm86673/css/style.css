@@ -1,0 +1,36 @@
+table{
+    width: 100%;
+    border-spacing: 0.5%;
+}
+
+table, td, th {
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1.5%;
+}
+
+td {
+    text-align: center;
+}
+
+.img-tb {
+    width: 20%;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(233, 32, 32);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(243, 239, 30);
+}
+
+th {
+    background-color: rgba(23, 75, 218);
+}
+tr:hover {
+    background-color: rgba(114, 107, 107);
+}
