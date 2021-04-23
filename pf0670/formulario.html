@@ -20,36 +20,42 @@
                     <legend>FORMULÁRIO DE CADASTRO</legend>
                     <div>
                         <label for="idTxtNm">Nome</label>
-                        <input type="text" name="txtNm" id="idTxtNm">
+                        <input type="text" name="txtNm" id="idTxtNm"
+                            oninvalid="setCustomValidity('Este campo deve ser preenchido.')" pattern="[a-zA-Z]{3,100}$">
                     </div>
                     <div>
                         <label for="idTxtProf">Profissão</label>
-                        <input type="text" name="txtProf" id="idTxtProf">
+                        <input type="text" name="txtProf" id="idTxtProf"
+                            oninvalid="setCustomValidity('Este campo deve ser preenchido.')" pattern="[a-zA-Z]{3,100}$">
                     </div>
                     <div>
                         <label for="idTxtEmail">Email</label>
-                        <input type="text" name="txtEmail" id="idTxtEmail" pattern="[a-z]">
+                        <input type="text" name="txtEmail" id="idTxtEmail"
+                            oninvalid="setCustomValidity('Email inválido.')"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z.]{2,}$">
                     </div>
-
+                    <!-- profalexandre.jesus@fiap.com.br -->
+                    <!-- RADIO BUTTONS -->
                     <fieldset>
                         <legend>GÊNERO</legend>
                         <div>
                             <div>
                                 <label for="idRdbGenM">Masculino</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenM" value="m">
+                                <input type="radio" name="rdbGen" id="idRdbGenM" value="m" required>
                             </div>
                             <div>
                                 <label for="idRdbGenF">Feminino</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
+                                <input type="radio" name="rdbGen" id="idRdbGenF" value="f" required>
                             </div>
                             <div>
                                 <label for="idRdbGenO">Outros</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
+                                <input type="radio" name="rdbGen" id="idRdbGenO" value="o" required>
                             </div>
                         </div>
                     </fieldset>
+
                     <div>
-                        Nome : <input type="submit" value="ENVIAR">
+                        <input type="submit" value="ENVIAR">
                     </div>
                 </fieldset>
             </form>
