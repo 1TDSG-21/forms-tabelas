@@ -8,19 +8,47 @@
 </head>
 <body>
     <div id="container">
-        <h1>Formulario de Cadastro</h1>
+        <h1>EXEMPLOS DE FORMULARIO</h1>
         <div>
             <form action="tabela.html" method="GET">
-                <div>
-                    Nome: <input type="text" name="nome">
+                <fieldset>
+                    <legend>FORMULARIO DE CADASTRO</legend>
+                
+                    <div>
+                        <label for="idTxtNm">Nome</label>
+                        Nome: <input type="text" name="txtNm" id="idTxtNm">
 
-                </div>
-                <div>
-                    Profissão: <input type="text" name="profissao">
-                </div>
-                <div>
-                    <input type="submit" value="enviar">
-                </div>
+                    </div>
+                    <div>
+                        <label for="idTxtProf">Profissão</label>
+                        Profissão: <input type="text" name="txtProf" id="idTxtProf">
+                    </div>
+                    <div>
+                        <label for="idTxtEmail">Email</label>
+                        E-mail: <input type="text" name="txtEmail" id="idTxtEmail" pattern="[a-z]">
+                    </div>
+                    
+                    <fieldset>
+                        <legend>GÊNERO</legend>
+                        <div>
+                            <div>
+                                <label for="idRdbGenM">Masculino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenM" value="m">
+                            </div>
+                            <div>
+                                <label for="idRdbGenF">Feminino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
+                            </div>
+                            <div>
+                                <label for="idRdbGenO">Outros</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div>
+                        Nome: <input type="submit" value="ENVIAR">
+                    </div>
+                </fieldset>
             </form>
 
         </div>
