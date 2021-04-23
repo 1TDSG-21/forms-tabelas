@@ -47,3 +47,15 @@ input[type=text] {
     display: block;
     width: 100%;
 }
+input:required + [oninvalid] {
+    color: #ff0000;
+}
+input{
+    width: 100px;
+}
+input:required:valid {
+    border: 2px solid #009900;
+}
+input:required:not(:placeholder-shown):invalid {
+    border: 2px solid #c9001b;
+}
