@@ -20,21 +20,21 @@
                     <legend>FORMULÁRIO DE CADASTRO</legend>
                     <div>
                         <label for="idTxtNm">Nome</label>
-                        <input type="text" name="txtNm" id="idTxtNm" 
+                        <input type="text" name="txtNm" id="idTxtNm"
                             oninvalid="setCustomValidity('Este campo deve ser preenchido.')" pattern="[a-zA-Z]{3,100}$">
                     </div>
                     <div>
                         <label for="idTxtProf">Profissão</label>
-                        <input type="text" name="txtProf" id="idTxtProf" 
+                        <input type="text" name="txtProf" id="idTxtProf"
                             oninvalid="setCustomValidity('Este campo deve ser preenchido.')" pattern="[a-zA-Z]{3,100}$">
                     </div>
                     <div>
                         <label for="idTxtEmail">Email</label>
-                        <input type="text" name="txtEmail" id="idTxtEmail" 
-                            oninvalid="setCustomValidity('Este campo deve ser preenchido.')" 
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <input type="text" name="txtEmail" id="idTxtEmail"
+                            oninvalid="setCustomValidity('Email inválido.')"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z.]{2,}$">
                     </div>
-
+                    
                     <fieldset>
                         <legend>GÊNERO</legend>
                         <div>
@@ -52,8 +52,9 @@
                             </div>
                         </div>
                     </fieldset>
+
                     <div>
-                         <input type="submit" value="ENVIAR">
+                        <input type="submit" value="ENVIAR">
                     </div>
                 </fieldset>
             </form>

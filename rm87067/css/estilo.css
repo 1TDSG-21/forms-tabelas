@@ -48,6 +48,6 @@ input[type=text] {
     width: 100%;
 }
 
-input[oninvalid]{
-    background-color: #ff0000;
+input:invalid {
+    background-color: #dc143c;
 }
