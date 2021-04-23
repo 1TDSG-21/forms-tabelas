@@ -47,3 +47,7 @@ input[type=text] {
     display: block;
     width: 100%;
 }
+
+input[oninvalid]{
+    background-color: #ff0000;
+}
