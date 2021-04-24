@@ -27,3 +27,11 @@ tr:hover{
 th{
     background-color: #a1b1ca;
 }
+#container{
+    background-color: #94dbafc7;
+}
+input[type=text]{
+    display: block;
+    width: 100%;
+
+}

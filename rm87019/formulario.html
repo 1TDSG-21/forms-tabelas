@@ -10,7 +10,52 @@
 <body>
 
     <div id="container">
-        
+        <h1>FORMULÁRIO DE CADASTRO</h1>
+        <div>
+            <form action="tabela.html" method="GET">
+                <fieldset>
+                    <legend>Dados de Cadastro</legend>
+
+                <div>
+                    <label for="idTxtNome">Nome:</label> 
+                    <input type="text" name="txtNome" id="idTxtNome">
+                </div>
+
+                <div>
+                  <label for="idTxtProf">Profissão:</label>  
+                  <input type="text" name="txtProf" id="idTxtProf">
+                </div>
+
+                <div>
+                   <label for="idTxtEmail">Email:</label>
+                   <input type="text" name="txtEmail" id="idTxtEmail">
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Genêro</legend>
+                    <div>
+                        <label for="idrdbGenM">Masculino</label>
+                        <input type="radio" name="rdbGen" id="idrdbGenM" value="m">
+                    </div>
+                    <div>
+                        <label for="idrdbGenF">Feminino</label>
+                        <input type="radio" name="rdbGen" id="idrdbGenF" value="f">
+                    </div>
+                    <div>
+                        <label for="idrdbGenO">Outros</label>
+                        <input type="radio" name="rdbGen" id="idrdbGenO" value="o">
+                    </div>
+                </fieldset>
+                </div>
+    
+                <div>
+                 <input type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+            </form>
+        </div>
 
     </div>
 
