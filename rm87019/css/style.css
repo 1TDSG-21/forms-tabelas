@@ -3,7 +3,7 @@ table{
     border-spacing: 5px;
 }
 table, th, td{
-    border: 2px solid #000;
+    border: 2px solid #069696;
     border-collapse: collapse;
 }
 th, td{
@@ -11,4 +11,19 @@ th, td{
 }
 td{
     text-align: center;
+}
+.img-td{
+    width: 35%;
+}
+tr:nth-child(even){
+    background-color: #7fffd4;
+}
+tr:nth-child(odd){
+    background-color: #ffe4c4;
+}
+tr:hover{
+    background-color: #857e7e;
+}
+th{
+    background-color: #a1b1ca;
 }
