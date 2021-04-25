@@ -1,0 +1,40 @@
+table{
+    width: 100%;
+    border-spacing: 5px;
+}
+table, th, td{
+    border: 2px solid #069696;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 15px;
+}
+td{
+    text-align: center;
+}
+.img-td{
+    width: 35%;
+}
+tr:nth-child(even){
+    background-color: #7fffd4;
+}
+tr:nth-child(odd){
+    background-color: #ffe4c4;
+}
+tr:hover{
+    background-color: #857e7e;
+}
+th{
+    background-color: #a1b1ca;
+}
+#container{
+    background-color: #94dbafc7;
+}
+input[type=text]{
+    display: block;
+    width: 100%;
+
+}
+input:invalid{
+    background-color: #e0a3a3;
+}

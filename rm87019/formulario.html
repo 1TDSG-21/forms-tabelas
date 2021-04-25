@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>FORMULÁRIO DE CADASTRO</h1>
+        <div>
+            <form action="tabela.html" method="GET">
+                <fieldset>
+                    <legend>Dados de Cadastro</legend>
+
+                <div>
+                    <label for="idTxtNome">Nome:</label> 
+                    <input type="text" name="txtNome" id="idTxtNome"  placeholder="Nome"
+                     oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]{2,100}">
+                </div>
+
+                <div>
+                  <label for="idTxtProf">Profissão:</label>  
+                  <input type="text" name="txtProf" id="idTxtProf"  placeholder="Profissão"
+                   oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]{2,100}">
+                </div>
+
+                <div>
+                   <label for="idTxtEmail">Email:</label>
+                   <input type="text" name="txtEmail" id="idTxtEmail" placeholder="Email" 
+                   oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-z0-9._-]+@[a-z0-9.-]+[a-z]">
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Gênero</legend>
+                    <div>
+                        <label for="idrdbGenM">Masculino</label>
+                        <input type="radio" name="rdbGen" id="idrdbGenM" value="m" required>
+                    </div>
+                    <div>
+                        <label for="idrdbGenF">Feminino</label>
+                        <input type="radio" name="rdbGen" id="idrdbGenF" value="f" required>
+                    </div>
+                    <div>
+                        <label for="idrdbGenO">Outros</label>
+                        <input type="radio" name="rdbGen" id="idrdbGenO" value="o" required>
+                    </div>
+                </fieldset>
+                </div>
+    
+                <div>
+                 <input type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
