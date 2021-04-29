@@ -19,7 +19,7 @@
                 <fieldset class="info">
 
                     <div>
-                        <input type="hidden">
+                        <input type="hidden" name="txtId" value="2323">
                     </div>
 
                     <legend>FORMULÁRIO DE CADASTRO</legend>
@@ -48,16 +48,30 @@
                     <div>
                         <div>
                             <label for="idRdbGenM">Masculino</label>
-                            <input type="radio" name="rdbGen" id="idRdbGenM" value="m" required>
+                            <input type="radio" name="rdbGen" id="idRdbGenM" value="m" checked="checked">
                         </div>
                         <div>
                             <label for="idRdbGenF">Feminino</label>
-                            <input type="radio" name="rdbGen" id="idRdbGenF" value="f" required>
+                            <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
                         </div>
                         <div>
                             <label for="idRdbGenO">Outros</label>
-                            <input type="radio" name="rdbGen" id="idRdbGenO" value="o" required>
+                            <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
                         </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="endereco">
+                    <legend>ENDEREÇO</legend>
+                    <div>
+                        <label for="idSelEstado">Estados:</label>
+                        <select name="selEstado" id="idSelEstado">
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sc">Sta Catarina</option>
+                            <option value="ba">Bahia</option>
+                            <option value="0" selected="selected">Selecione uma opção</option>
+                        </select>
                     </div>
                 </fieldset>
 
@@ -69,6 +83,25 @@
 
         </div>
 
+
+        <h2>EXEMPLO DE QUERY STRING</h2>
+
+        <div>
+            <form action="validador" method="GET">
+                <fieldset>
+                    <legend>LOGOUT</legend>
+                    <div>
+                        <input type="hidden" name="txtLogin" value="false">
+                    </div>
+                    <div>
+                        <input type="submit" value="LOGOUT">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <a href="validador?txtLogin=false&nome=Ale">LOGOUT</a>
+        </div>
     </div>
 </body>
 
