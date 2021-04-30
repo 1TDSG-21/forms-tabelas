@@ -59,3 +59,44 @@ input:required:valid {
 input:required:not(:placeholder-shown):invalid {
     border: 2px solid #c9001b;
 }
+
+
+.info {
+    margin: 15px 0;
+    font-size: 1.5em;
+
+}
+
+.gen {
+    margin: 15px 0;
+
+}
+
+.info input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+
+}
+
+.gen label {
+
+    position: absolute;
+}
+
+.gen input {
+    margin: 0 80px;
+}
+
+
+
+.endereco select {
+    padding: 5px 2px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
