@@ -13,7 +13,10 @@
         <h1>EXEMPLO DE FORMULÁRIOS</h1>
         <div>
             <form action="Tabelas.html" method="GET">
-                <fieldset>
+                <fieldset class="info">
+                        <div>
+                            <input type="hidden" name="txtId" value="2323">
+                        </div>
                         <legend>FORMULÁRIO DE CADASTRO</legend>
                         <div>
                             <label for="IdtxtNm">Nome</label>
@@ -27,7 +30,7 @@
                             <label for="IdtxtEmail">E-mail</label>
                             <input type="email" name="txtEmail" id="IdtxtEmail" required oninvalid="setCustomValidity('E-mail inválido')" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         </div>
-                    <fieldset>
+                        <fieldset>
                         <legend>Gênero</legend>
                         <div>
                             <label for="RGB_1">Masculino</label>
@@ -40,9 +43,6 @@
                         <div>
                             <label for="IdtxtEmail">Outros</label>
                             <input type="radio" name="RGB3" id="RGB_O" value="o" required>
-                        </div>
-                        <div>
-                            <input type="submit" value="ENVIAR">
                         </div>
                     </fieldset>
                     <fieldset>
@@ -59,7 +59,24 @@
                         </div>
                     </fieldset>
                 </fieldset>
+                <div>
+                    <input type="submit" value="ENVIAR">
+                </div>
             </form>
+            <form action="validador" method="GET">
+                <fieldset>
+                    <legend>LOGOUT</legend>
+                    <div>
+                        <input type="hidden" name="txtLogin" value="false">
+                    </div>
+                    <div>
+                        <input type="submit" value="LOGOUT">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <a href="validador?txtLogin=false&nomeJP">LOGOUT</a>
         </div>
     </div>
 </body>
