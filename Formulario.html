@@ -17,29 +17,29 @@
                         <legend>FORMULÁRIO DE CADASTRO</legend>
                         <div>
                             <label for="IdtxtNm">Nome</label>
-                            <input type="text" name="txtNm" id="IdtxtNm">
+                            <input type="text" name="txtNm" id="IdtxtNm" required oninvalid="setCustomValidity('Esta lacuna deve ser preenchida.')" pattern="[a-zA-Z]{3,100}$">
                         </div>
                         <div>
                             <label for="IdtxtProf">Profissão</label>
-                            <input type="text" name="txtProf" id="IdtxtProf">
+                            <input type="text" name="txtProf" id="IdtxtProf" required oninvalid="setCustomValidity('Esta lacuna deve ser preenchida.')" pattern="[a-zA-Z]{3,100}$">
                         </div>
                         <div>
                             <label for="IdtxtEmail">E-mail</label>
-                            <input type="email" name="txtEmail" id="IdtxtEmail">
+                            <input type="email" name="txtEmail" id="IdtxtEmail" required oninvalid="setCustomValidity('E-mail inválido')" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         </div>
                     <fieldset>
                         <legend>Gênero</legend>
                         <div>
                             <label for="RGB_1">Masculino</label>
-                            <input type="radio" name="RGB1" id="RGB_M" value="m">
+                            <input type="radio" name="RGB1" id="RGB_M" value="m" required>
                         </div>
                         <div>
                             <label for="IdtxtEmail">Feminina</label>
-                            <input type="radio" name="RGB2" id="RGB_F" value="f">
+                            <input type="radio" name="RGB2" id="RGB_F" value="f" required>
                         </div>
                         <div>
                             <label for="IdtxtEmail">Outros</label>
-                            <input type="radio" name="RGB3" id="RGB_O" value="o">
+                            <input type="radio" name="RGB3" id="RGB_O" value="o" required>
                         </div>
                         <div>
                             <input type="submit" value="ENVIAR">
