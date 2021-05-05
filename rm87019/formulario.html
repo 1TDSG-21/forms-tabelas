@@ -10,54 +10,89 @@
 <body>
 
     <div id="container">
+
         <h1>FORMULÁRIO DE CADASTRO</h1>
+
         <div>
             <form action="tabela.html" method="GET">
-                <fieldset>
+                <fieldset class="info">
+                    <div>
+                        <input type="hidden" value="2323" name="txtId">
+                    </div>
                     <legend>Dados de Cadastro</legend>
 
                 <div>
                     <label for="idTxtNome">Nome:</label> 
                     <input type="text" name="txtNome" id="idTxtNome"  placeholder="Nome"
-                     oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]{2,100}">
+                     oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]{2,100}" required>
                 </div>
 
                 <div>
                   <label for="idTxtProf">Profissão:</label>  
                   <input type="text" name="txtProf" id="idTxtProf"  placeholder="Profissão"
-                   oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]{2,100}">
+                   oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]{2,100}" required>
                 </div>
-
+                
                 <div>
                    <label for="idTxtEmail">Email:</label>
-                   <input type="text" name="txtEmail" id="idTxtEmail" placeholder="Email" 
-                   oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-z0-9._-]+@[a-z0-9.-]+[a-z]">
+                   <input type="email" name="txtEmail" id="idTxtEmail" placeholder="Email" 
+                   oninvalid="setCustomValidity('Este campo deve ser preenchido')" required>
                 </div>
-
+            </fieldset>
                 <div>
-                    <fieldset>
+                    <fieldset class="gen">
                         <legend>Gênero</legend>
                     <div>
                         <label for="idrdbGenM">Masculino</label>
-                        <input type="radio" name="rdbGen" id="idrdbGenM" value="m" required>
+                        <input type="radio" name="rdbGen" id="idrdbGenM" value="m" checked="checked">
                     </div>
                     <div>
                         <label for="idrdbGenF">Feminino</label>
-                        <input type="radio" name="rdbGen" id="idrdbGenF" value="f" required>
+                        <input type="radio" name="rdbGen" id="idrdbGenF" value="f">
                     </div>
                     <div>
                         <label for="idrdbGenO">Outros</label>
-                        <input type="radio" name="rdbGen" id="idrdbGenO" value="o" required>
+                        <input type="radio" name="rdbGen" id="idrdbGenO" value="o">
                     </div>
                 </fieldset>
-                </div>
+
+                <Fieldset class="endereco">
+                    <legend>ENDEREÇO</legend>
+                    <div>
+                    <label for="idSelEstado">Estados</label>
+                    <select name="selEstado" id="idSelEstado">
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="ba">Bahia</option>
+                        <option value="0" selected="select">Selecione uma opção</option>
+                    </select>
+                    </div>
+                </Fieldset>
     
                 <div>
-                 <input type="submit" value="Enviar">
+                 <input class="button" type="submit" value="Enviar">
                 </div>
 
-            </fieldset>
+                <h2>EXEMPLO DE QUERY STRING</h2>
+                <div>
+                    <form action="validador" method="GET">
+                        <fieldset>
+                            <legend>LOGOUT</legend>
+                            <div>
+                                <input type="hidden" name="txtLogin" value="false">
+                            </div>
+                            <div>
+                                <input type="submit" value="LOGOUT">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            
             </form>
+        </div>
+        <div>
+            <a href="validador?txtLogin=false&nome=Gio">LOGOUT</a>
         </div>
 
     </div>
